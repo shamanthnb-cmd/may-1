@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage ('Checkout'){
             steps{
-                git https://github.com/shamanthnb-cmd/may-1.git'
+                git 'https://github.com/shamanthnb-cmd/may-1.git'
             }
         }
         stage('Build'){
