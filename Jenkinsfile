@@ -1,8 +1,7 @@
 pipeline{
     agent any
-    Environment {
-        DOCKER_USERNAME = credentials('shamanth123')
-        DOCKER_PASSWORD = credentials('Mlore@1434')
+    environment {
+        Dockercredential = credentials('dockerhub')
         Tag=buildNumber()
     }
     stages{
